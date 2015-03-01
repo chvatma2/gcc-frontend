@@ -3,5 +3,13 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp
+SOURCES += \
+    lexan.cpp \
+    main.cpp
+
+HEADERS += \
+    lexan.h
+
+OTHER_FILES += \
+    Makefile
 
