@@ -5,10 +5,12 @@ CONFIG -= qt
 
 SOURCES += \
     lexan.cpp \
-    main.cpp
+    main.cpp \
+    lexicalsymbol.cpp
 
 HEADERS += \
-    lexan.h
+    lexan.h \
+    lexicalsymbol.h
 
 OTHER_FILES += \
     Makefile

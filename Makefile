@@ -1,7 +1,7 @@
-CC=g++
+CC=g++ -std=c++11
 CFLAGS=-Wall -pedantic -ggdb
-OBJ=main.o lexan.o
-DEPS=lexan.h
+OBJ=main.o lexan.o lexicalsymbol.o
+DEPS=lexan.h lexicalsymbol.h
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
