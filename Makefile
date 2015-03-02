@@ -1,13 +1,13 @@
-CC=g++ -std=c++11
-CFLAGS=-Wall -pedantic -ggdb
+CXX=g++
+CXXFLAGS =-std=c++11 -Wall -pedantic -ggdb
 OBJ=main.o lexan.o lexicalsymbol.o
 DEPS=lexan.h lexicalsymbol.h
 
 %.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
+	$(CXX) -c -o $@ $<
 
 frontend: $(OBJ)
-	$(CC) -o $@ $^ $(CFLAGS)
+	$(CXX) -o $@ $^
 
 .PHONY: clean
 clean:

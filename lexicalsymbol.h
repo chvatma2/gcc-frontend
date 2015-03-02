@@ -3,6 +3,8 @@
 
 #include <cstdint>
 
+using namespace std;
+
 enum  LexSymbolType{IDENT, NUMB, PLUS, MINUS, LESS, LESS_OR_EQ, ASSIGN,
                     kwIF, kwTHEN, kwELSE, EOI, ERR};
 

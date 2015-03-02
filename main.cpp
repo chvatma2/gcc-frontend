@@ -33,6 +33,6 @@ int main ( int argc, char * argv[] )
   {
     Lexan.readLexicalSymbol(lexSymbol);
   }
-  while (1);
+  while (lexSymbol.getType() != LexSymbolType::EOI);
   return 0;
 }
